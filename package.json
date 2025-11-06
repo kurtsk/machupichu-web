@@ -1,0 +1,28 @@
+{
+  "name": "machupicchu",
+  "version": "1.0.1",
+  "description": "Machupichu",
+  "productName": "Machupichu",
+  "author": "kurts kisis <kurtsk@kisis.net>",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "4.1.2",
+    "vite-plugin-vuetify": "^2.1.2",
+    "vuetify": "^3.10.3"
+  },
+  "dependencies": {
+    "@mdi/font": "7.2.96",
+    "@pinia/nuxt": "^0.11.2",
+    "pinia": "^3.0.3",
+    "sass": "^1.61.0",
+    "sass-loader": "^14.2.1",
+    "vue": "^3.5.21"
+  }
+}

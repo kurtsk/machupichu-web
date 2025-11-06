@@ -1,0 +1,52 @@
+
+//================================
+//     Animacion para SLIDE DOWN
+//================================
+.slide-down-fade-enter-active {
+  transition: all .4s ease;
+}
+.slide-down-fade-leave-active {
+  transition: all .3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  //transition: all .3s cubic-bezier(.17, .67, .83, .67);
+}
+.slide-down-fade-enter-from, .slide-down-fade-leave-to {
+  transform: translateY(400px);
+  opacity: 0;
+}
+.slide-down-fade-leave-to {
+  //filter: blur(1rem);
+}
+//================================
+//     Animacion para SLIDE RIGHT
+//================================
+.slide-right-fade-enter-active {
+  transition: all .4s ease;
+}
+.slide-right-fade-leave-active {
+  transition: all .3s cubic-bezier(.17, .67, .83, .67);
+}
+.slide-right-fade-enter {
+  transform: translateX(-200px);
+  opacity: 0;
+}
+.slide-right-fade-leave-to {
+  transform: translateX(200px);
+  opacity: 0;
+}
+//================================
+//     Animacion para SLIDE LEFT
+//================================
+.slide-left-fade-enter-active {
+  transition: all .4s ease;
+}
+.slide-left-fade-leave-active {
+  transition: all .3s cubic-bezier(.17, .67, .83, .67);
+}
+.slide-left-fade-enter {
+  transform: translateX(200px);
+  opacity: 0;
+}
+.slide-left-fade-leave-to {
+  transform: translateX(-200px);
+  opacity: 0;
+}

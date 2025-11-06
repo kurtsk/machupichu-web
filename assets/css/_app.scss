@@ -1,0 +1,92 @@
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,500,600,700 rel="stylesheet');
+$font-family-sans-serif: 'Oswald', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+.btn-blue {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  background-color: rgba(17, 21, 50, 0.71);
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  border-radius: .6rem;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  padding: 15px 18px 15px 18px;
+  line-height: 1.5;
+  top: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .3);
+  transition: all .4s ease-in-out;
+
+  &:hover {
+    background-color: rgba(17, 21, 50, 0.9);
+    color: #fff;
+    top: -1px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, .3);
+  }
+}
+
+.bg-blue {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.btn-red {
+  position: relative;
+  width: 100%;
+  display: block;
+  background-color: rgba(50, 17, 17, 0.71);
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  border-radius: .3rem;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  padding: 15px 18px 15px 18px;
+  line-height: 1.5;
+  top: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .3);
+  transition: all .4s ease-in-out;
+
+  &:hover {
+    background-color: rgba(50, 17, 17, 0.9);
+    color: #fff;
+    top: -1px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, .3);
+  }
+}
+
+.footer-pdp {
+  vertical-align: bottom;
+  display: block;
+  //font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #666;
+
+  a {
+    color: #666;
+  }
+
+  p {
+    padding-bottom: 0;
+  }
+
+  .title-section {
+    font-size: 4rem;
+    font-weight: 200;
+    color: white;
+    text-shadow: 0 3px 3px black;
+  }
+}
