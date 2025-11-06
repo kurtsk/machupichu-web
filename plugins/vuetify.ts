@@ -9,16 +9,23 @@
 // })
 
 import { defineNuxtPlugin } from '#app'
+import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
-import colors from 'vuetify'
+import { aliases, mdi } from 'vuetify/iconsets/mdi'
 import '@mdi/font/css/materialdesignicons.css'
 
-export default defineNuxtPlugin((app) => {
-    const vuetify = createVuetify({
-    // @ts-ignore
-        theme: { dark: true },
-    })
-    app.vueApp.use(vuetify)
+export default defineNuxtPlugin((nuxtApp) => {
+  const vuetify = createVuetify({
+    theme: {
+      defaultTheme: 'dark',
+    },
+    icons: {
+      defaultSet: 'mdi',
+      aliases,
+      sets: { mdi },
+    },
+  })
+  nuxtApp.vueApp.use(vuetify)
 })
 
 

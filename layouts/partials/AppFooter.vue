@@ -31,6 +31,7 @@ let reservaconfirmadaUrl = ref('https://bistrosuite.io')
 
 .footer {
   background: #0f0f0f;
+  width: 100%;
   z-index: 2;
   text-align: center;
 

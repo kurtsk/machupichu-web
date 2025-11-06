@@ -1,20 +1,24 @@
 <script setup>
 
 import {ref} from "vue";
-import {useRuntimeConfig} from "nuxt/app";
+// import {useRuntimeConfig} from "nuxt/app";
 import {useDataStore} from '~/stores/data-store.js'
 
 
 const dataStore = useDataStore()
 // const config = useRuntimeConfig();
 
-let drawer = ref(false)
+const drawer = ref(false)
+const toggleDrawer = () => {
+  console.log('ENTRE A DRAWER')
+  drawer.value = !drawer.value
+}
 
 </script>
 
 <template>
   <v-app-bar color="appbg" :fixed="true" flat theme="dark" class="appbg">
-    <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
+    <v-app-bar-nav-icon @click="toggleDrawer"/>
     <div class="logo-bar">
       <img
         class="elevation-4"
@@ -98,10 +102,11 @@ let drawer = ref(false)
 
   <v-navigation-drawer
     v-model="drawer"
-    absolute
     temporary
-    dark
-    width="500"
+    location="start"
+    :scrim="true"
+    width="300"
+    :theme="'dark'"
     :color="dataStore.appGraphicsDrawerBg"
   >
     <v-list nav>

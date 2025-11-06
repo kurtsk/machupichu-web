@@ -1,7 +1,9 @@
 <template>
-  <NuxtLayout :name="layout">
-    <NuxtPage/>
-  </NuxtLayout>
+  <v-app>
+    <NuxtLayout :name="layout">
+      <NuxtPage/>
+    </NuxtLayout>
+  </v-app>
 </template>
 <script setup>
 const layout = "default";
