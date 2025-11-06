@@ -19,7 +19,7 @@ const toggleDrawer = () => {
 <template>
   <v-app-bar color="appbg" :fixed="true" flat theme="dark" class="appbg">
     <v-app-bar-nav-icon @click="toggleDrawer"/>
-    <div class="logo-bar">
+    <div class="logo-bar d-none d-sm-flex">
       <img
         class="elevation-4"
         :src="dataStore.appIcon"
@@ -105,7 +105,7 @@ const toggleDrawer = () => {
     temporary
     location="start"
     :scrim="true"
-    width="300"
+    width="500"
     :theme="'dark'"
     :color="dataStore.appGraphicsDrawerBg"
   >

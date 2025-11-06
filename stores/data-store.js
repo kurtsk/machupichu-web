@@ -90,7 +90,8 @@ export const useDataStore = defineStore('data', {
         appAddress: 'Av. Francisco Bilbao 1256 - Providencia',
         appPhone: '(+56) (2) 2225 2127',
         appEmail: 'restmachupicchu@gmail.com',
-        appHorarios: 'Lunes a Sábado de 13:00pm a 00:00am y Domingos de 13:00pm a 17:00pm',
+        appHorarios: 'Lunes a Sábado de 13:00pm a 00:00am',
+        appHorarios2: 'Domingos de 13:00pm a 17:00pm',
         appSlogan1: 'Pioneros en Gastronomía Peruana en Chile,',
         appSlogan2: 'Somos tradición de calidad en exquisitas preparaciones internacionales.',
 

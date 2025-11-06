@@ -1,5 +1,5 @@
 <template>
-  <v-footer :fixed="true" app theme="dark" class="footer">
+  <v-footer app theme="dark" class="footer">
     <div class="copyright text-center">
       © {{ fecha.getFullYear() }}, Powered by <br />
       <a :href="reservaconfirmadaUrl" target="_blank">

@@ -75,6 +75,7 @@
                 />
               </a>
             </v-col>
+          </v-row>
             <p
               style="width: 100%"
               class="mt-8 text-center text-white k-anim k-fadeInRight fast500 m-in-easy delay-700ms bg-amber-4"
@@ -86,13 +87,17 @@
               class="pb-4 text-center text-white k-anim k-fadeInLeft fast500 m-in-easy delay-700ms"
             >
               {{ dataStore.appPhone }}
-            </p>
+            </p><br>
             <p
               class="pb-4 text-center text-white k-ani.m k-fadeInLeft fast500 m-in-easy delay-700ms"
             >
               {{ dataStore.appHorarios }}
             </p>
-          </v-row>
+            <p
+              class="pb-4 text-center text-white k-ani.m k-fadeInLeft fast500 m-in-easy delay-700ms"
+            >
+              {{ dataStore.appHorarios2 }}
+            </p>
         </v-card-item>
       </v-card>
     </v-col>
